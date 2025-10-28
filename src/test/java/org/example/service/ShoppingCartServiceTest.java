@@ -13,17 +13,30 @@ import java.util.Optional;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
-//assign to team-meber
+//assign to team-member
 //update status
 //isoverdue():
 
 class TaskServiceTest {
 
     @Test
-    void test_when_assigned_to_team_member()
+    public void test_when_assigned_to_team_member()
     {
-        addTaskToMeber(memberId);
+        addTaskToMember(memberId);
     }
+
+    @Test
+    public void test_when_status_is_updated(taskId)
+    {
+        updateStatus(taskID)
+    }
+
+    @Test
+    public void test_to_return_task_overdue_or_not(taskID)
+    {
+        isOverdue();
+    }
+
 }
 
 
